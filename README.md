@@ -57,3 +57,15 @@ The workshop is approximately 50% theory and 50% hands-on.
 ## Software requirements
 
 We will be doing this on cloud. Laptop with a browser is all you need for the workshop.
+
+If you want to setup a local enviroment for it, the follow the next set of instructions.
+
+- We will be using Python data stack for the workshop. Please install Ananconda for Python 3 (https://www.continuum.io/downloads) BEFORE coming to the workshop. 
+- After installing Anaconda, please install the following libraries for recommendation systems.
+
+```
+pip install lightfm
+pip install mrec
+pip install scikit-surprise
+pip install mlxtend  
+```
