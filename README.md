@@ -65,7 +65,6 @@ If you want to setup a local enviroment for it, the follow the next set of instr
 
 ```
 pip install lightfm
-pip install mrec
 pip install scikit-surprise
 pip install mlxtend  
 ```
