@@ -1,50 +1,72 @@
 # Recommendation Systems
 
-> Sure. I do marathons…. on Netflix
 
-In the digital world, recommendation systems play a significant role - both for the users and for the company/platform/sellers.
-
-For the users, a new world of options are thrown up - that were hitherto tough to find. For companies, it helps drive up user engagement and satisfaction, directly impacting their bottom line.
-
-If you’ve shopped on e-commerce platforms like Amazon or Flipkart, you would’ve seen options like:
-
-“People who viewed this product also viewed…”
-“Products similar to this one…”
-
-These are the results from recommendation systems. Netflix threw up a major data science challenge last decade: a million dollars to anyone who can improve their recommendation system by 10%. A recent estimate pegs the value of Netflix’s recommendation system to be worth $ 1 Billion.
-
-In this full-day workshop, we will walk you through the various types of recommendation system. By the end of the workshop, you will have enough knowledge to build one for your problem.
 
 ## Outline for the workshop
 
-### Session 1
+### Session #1: Introduction
+- Why build recommendation systems? 
+    - Scope and evolution of recsys
+    - Prediction and Ranking
+    - Relevance, novelty, serendipity & diversity
+- Paradigms in recommendations: Content-based, Collaborative filtering, Knowledge-based, Hybrid and Ensembles
+- Key concepts in recsys: 
+  - Explicit vs. implicit feedback
+  - User-Item matrix
+  - Domain signals: location, time, context, social
+- Why use deep learning for recsys?
+    - Primer on deep learning
+    - Traditional vs deep learning approaches
+    - Examples and use-cases
 
-- What are recommendation systems?
-  - Definition
-  - Some examples
-  - Discussions around how to define the data for recommendation systems
-- Common types of recommendation systems
-  - Explicit Feedback
-  - Implicit Feedback
-  - item-based recommendation system
-  - user-based recommendation system
-  - Content-based recommendation system
+### Session #2: Content-Based 
+- Introduction to the case #1: product recommendation
+- Environment setup for hands-on session
+- Feature extraction using deep learning: Embeddings for Hetrogenous data
+- *Exercise: Recommending items using similarity measures*
 
-### Session 2
-- Collaborative Filtering (hands-on)
-- Matrix Factorization (hands-on)
+### Session #3: Colloborative-Filtering
+- Overview of traditional Colloborative-Filtering for recsys
+- Primer on deep learning approaches
+    - Deep matrix factorisation
+    - Auto-Encoders
+- *Exercise: Recommending items using Colloborative-Filtering*
 
-### Session 3
+### Session #4: Learning-to-Rank
+- Why learning-to-rank? Prediction vs Ranking
+- Rank-learning approaches: pointwise, pairwise and listwise
+- Deep learning approach to combine prediction and ranking
+- *Exercise: Recommending items using Learning-to-Rank*
 
-- Content-based Recommendation System (hands-on)
-- Deep Learning in Recommendation System (theory only)
 
-### Session 4
-- Recommendation System in production
+### Session #5: Hybrid Recommender
+- Introduction to the case #2: text recommendation
+- Combining content-based and collaborative filtering
+- Primer on Wide & Deep Learning for Recommender Systems
+- *Exercise: Recommending items using Hybrid recommender*
+
+### Session #6: Time and Context
+- Adding temporal component: window and decay-based
+- Adding context context through group recommendations
+- Dynamic and Sequential modelling using Recurrent Neural Networks
+- *Exercise: Recommending items using RNN recommender*
+
+### Session #7: Deployment & Monitoring
 - Deploying the recommendation system models
 - Measuring improvements from recommendation system
 - Improving the models based on the feedback from production
-- Closing thoughts and next steps
+- Architecture design for recsys: Offline, Nearline and Online 
+
+### Session #8:  Evaluation, Challenges & Way Forward
+- A/B testing for recommendation systems
+- Challenges in recsys: 
+  - Building explanations
+  - Model debugging
+  - Scaling-out & up
+  - Fairness, accountability and trust
+- Bias in recsys: training data, UI → Algorithm → UI, private
+- When not to use deep learning for recsys
+- Recap and next steps, Learning Resources
 
 ## Pre-requisites
 
