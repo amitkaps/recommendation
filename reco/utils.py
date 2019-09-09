@@ -12,8 +12,6 @@ def svg_fixed(svg, width="100%"):
     return HTML(text)
 
 
-
-
 def create_directory(directory_path):
     """
     Checks whether a directory exists in the current path, and if not creates it.
