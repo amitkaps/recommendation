@@ -3,18 +3,18 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 
-def encode_user_item(df, user_col, item_col):
+def encode_user_item(df, user_col, item_col, rating_col, time_col):
     """Function to encode users and items
     
     Params:     
         df (pd.DataFrame): Pandas data frame to be used.
         user_col (string): Name of the user column.
         item_col (string): Name of the item column.
+        rating_col (string): Name of the rating column.
+        timestamp_col (string): Name of the timestamp column.
     
     Returns: 
-        transform_df (pd.DataFrame): Modifed dataframe with the users and items index
-        user_encoder: sklearn Label Encoder for users
-        item_encoder: sklearn Label Encoder for users
+        encoded_df (pd.DataFrame): Modifed dataframe with the users and items index
     """
     
     encoded_df = df.copy()
@@ -27,8 +27,10 @@ def encode_user_item(df, user_col, item_col):
     item_encoder.fit(encoded_df[item_col].values)
     n_items = len(item_encoder.classes_)
 
-    encoded_df["user_index"] = user_encoder.transform(encoded_df[user_col])
-    encoded_df["item_index"] = item_encoder.transform(encoded_df[item_col])
+    encoded_df["USER"] = user_encoder.transform(encoded_df[user_col])
+    encoded_df["ITEM"] = item_encoder.transform(encoded_df[item_col])
+    
+    encoded_df.rename({rating_col: "RATING", time_col: "TIMESTAMP"}, axis=1, inplace=True)
     
     print("Number of users: ", n_users)
     print("Number of items: ", n_items)
@@ -68,14 +70,12 @@ def random_split (df, ratios, shuffle=False):
     return splits
 
 
-def user_split (df, col_time, col_user, ratios, chrono=False):
+def user_split (df, ratios, chrono=False):
     
     """Function to split pandas DataFrame into train, validation and test (by user in chronological order)
     
     Params:     
         df (pd.DataFrame): Pandas data frame to be split.
-        col_time (string): column name for timestamp
-        col_user (string): column name for user
         ratios (list of floats): list of ratios for split. The ratios have to sum to 1.
         chrono (boolean): whether to sort in chronological order or not
     
@@ -84,6 +84,8 @@ def user_split (df, col_time, col_user, ratios, chrono=False):
     """
     seed = 42                  # Set random seed
     samples = df.shape[0]      # Number of samples
+    col_time = "TIMESTAMP"
+    col_user = "USER"
     
     # Split by each group and aggregate splits together.
     splits = []
