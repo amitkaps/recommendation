@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
+from reco.evaluate import user_item_crossjoin, filter_by
 
 
 def encode_user_item(df, user_col, item_col, rating_col, time_col):
@@ -112,6 +113,90 @@ def user_split (df, ratios, chrono=False):
     splits_list = [ splits_all[splits_all["split_index"] == x] for x in range(len(ratios))]
 
     return splits_list
+
+def neg_feedback_samples(
+    df,
+    rating_threshold, 
+    ratio_neg_per_user=1
+):
+    """ function to sample negative feedback from user-item interaction dataset.
+
+    This negative sampling function will take the user-item interaction data to create 
+    binarized feedback, i.e., 1 and 0 indicate positive and negative feedback, 
+    respectively. 
+
+    Args:
+        df (pandas.DataFrame): input data that contains user-item tuples.
+        rating_threshold (int): value below which feedback is set to 0 and above which feedback is set to 1
+        ratio_neg_per_user (int): ratio of negative feedback w.r.t to the number of positive feedback for each user. 
+
+    Returns:
+        pandas.DataFrame: data with negative feedback 
+    """
+    
+    #df.rename({"user_id":"USER", "movie_id":"ITEM", "rating":"RATING"}, inplace=True)
+    #print(df.columns)
+    #print(df.columns)
+    df.columns = ["USER", "ITEM", "RATING", "unix_timestamp"]
+    #print(df.columns)
+    
+    seed = 42
+    
+    df_pos = df.copy()
+    df_pos["RATING"] = df_pos["RATING"].apply(lambda x: 1 if x >= rating_threshold else 0)
+    df_pos = df_pos[df_pos.RATING>0]
+
+
+    # Create a dataframe for all user-item pairs 
+    df_neg = user_item_crossjoin(df)
+
+    #remove positive samples from the cross-join dataframe
+    df_neg = filter_by(df_neg, df_pos, ["USER", "ITEM"])    
+
+    #Add a column for rating - setting it to 0
+    df_neg["RATING"] = 0
+   
+    # Combine positive and negative samples into a single dataframe
+    df_all = pd.concat([df_pos, df_neg], ignore_index=True, sort=True)
+    df_all = df_all[["USER", "ITEM", "RATING"]]
+    
+    
+    # Sample negative feedback from the combined dataframe.
+    df_sample = (
+        df_all.groupby("USER")
+        .apply(
+            lambda x: pd.concat(
+                [
+                    x[x["RATING"] == 1],
+                    x[x["RATING"] == 0].sample(
+                        min(
+                            max(
+                                round(len(x[x["RATING"] == 1]) * ratio_neg_per_user), 1
+                            ),
+                            len(x[x["RATING"] == 0]),
+                        ),
+                        random_state=seed,
+                        replace=False,
+                    )
+                    if len(x[x["RATING"] == 0] > 0)
+                    else pd.DataFrame({}, columns=["USER", "ITEM", "RATING"]),
+                ],
+                ignore_index=True,
+                sort=True,
+            )
+        )
+        .reset_index(drop=True)
+        .sort_values("USER")
+    )
+
+#     print("####")
+#     print(df_sample.columns)
+#     print(df.columns)
+#     df_sample_w_ts = pd.merge(df_sample, df, on=["USER", "ITEM"], how="left")
+#     print(df_sample.columns)
+    df_sample.columns = ["movie_id", "rating", "user_id"]
+    return df_sample[["user_id", "movie_id", "rating"]]
+#    return df_sample
 
 
 def sample_data():
