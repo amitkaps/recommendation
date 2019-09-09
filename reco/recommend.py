@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import PIL
 
 
 def get_similar(embedding, k):
@@ -11,11 +14,9 @@ def get_similar(embedding, k):
 
 
 
-def show_similiar(item_number):
-    
-    item_distances, item_similar_indices = get_similar(item_embedding, 5)
-    
-    s = item_similar_indices[item]
+def show_similar(item_index, item_similar_indices, item_encoder):
+        
+    s = item_similar_indices[item_index]
     movie_ids = item_encoder.inverse_transform(s)
 
     images = []
