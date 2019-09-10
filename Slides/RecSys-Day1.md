@@ -59,7 +59,7 @@ San Jose, CA
 
 ---
 
-# **Workshop Introduction: Day One** *(30 mins)*
+# **Workshop Introduction: Day One**
 - **Objectives:** Context, learning outcomes
 - **Intros:** Participant & facilitator introductions
 - **Context:**: Purpose & role of Recommendation
@@ -73,17 +73,14 @@ San Jose, CA
 
 ---
 
-**Ice Breaker Exercise**
+# **Pervasive Everywhere**
+
+> “Once you see it, you see if everywhere”
 
 
 ---
 
-
-
-
----
-
-# Pervasive Everywhere
+![fit](img/framework.png)
 
 ---
 
@@ -100,16 +97,7 @@ San Jose, CA
 
 ---
 
----
-
 # **Why** Recommendations?
----
-
-# Revenue Usage
-
-- New: Very limited User Info (Location, Popularity)
-- Convert: Some User info (Point)
-- Retain: Long term User Interaction (Longitudinal)
 
 ---
 
@@ -119,10 +107,28 @@ San Jose, CA
 - B2C Ad-Based Based (News, App Stores, Youtube)
 - B2C / B2B Product/Service Marketplace (Amazon, Shopify)
 - B2B Company Website (Content Marketing)
+
+---
+
+# **RecSys Why** Usage
+
+**Revenue**
+- **New**: Very limited User Info (Location, Popularity)
+- **Convert**: Some User info (Point)
+- **Retain**: Long term User Interaction (Longitudinal)
    
 ---
 
 # **What** Recommendations?
+
+---
+
+# **RecSys Why** Usage
+
+- New: Very limited User Info (Location, Popularity)
+- Convert: Some User info (Point)
+- Retain: Long term User Interaction (Longitudinal)
+   
    
 ---
 
@@ -140,16 +146,117 @@ San Jose, CA
 ---
 
 # **Basic Building Blocks**
-- Item vs. User: Meta-data 
-- Interaction: Explicit vs. Implicit, Point vs. Longitudinal
+
+- Inputs
+    - Users vs. Items
+    - Interaction
+    - User & Item Features
+- Outputs
+    - User & Item Representation
+    - Prediction Function
+    - Ranking Function
 
 ---
 
+# **Users vs. Items**
 
-# [fit] **#2: Deep Learning Basics**
-- Basic DL Building Blocks
-- Guidance on building & training DL models
-- **Exercise**: Simple example for DL
+**Users**
+A user is the *active* party, receiving and acting on the recommendations.
+(Can be the context, not an actual person!)
+
+
+**Items**
+An item is the *passive* party that is being recommended to the users.
+
+---
+
+# **Interaction Actions: Positive vs. Negative**
+
+**Positive**
+Favourites, likes, stars, watches, shares, follows, bids, purchases, reads, views, upvotes...
+
+**Negative**
+Downvote, skip, 1-star reviews, rejections, unfollows, returns, downvotes...
+
+---
+
+# **Interaction Types: Explicit vs Implicit**
+
+**Explicit** 
+Actions that a *user expects or intends* to impact their personalized experience.
+
+**Implicit** 
+*All other actions* observed as interactions between users and items.
+
+---
+
+# **Interaction Scope: Point vs Temporal**
+  
+**Point** interaction consolidate all the interaction between a user and item into a single number e.g. Rating info
+
+**Longitudinal** interactions retain the history of interaction over timestamps e.g. Session-based
+
+---
+
+# **User & Item Features: Indicator**
+  
+**Indicator Features**
+- A feature that is unique to every user/item to allow for direct personalization.
+- These features allow recommender systems to learn about every user individually without being diluted through metadata.
+- Often one-hot encoded user IDs or just an identity matrix.
+
+---
+
+# **User & Item Features: Metadata**
+
+**Metadata Features**
+- Age, location, language, tags, labels, word counts, pre-learned embeddings, ...
+- Every element about user/item before training can be a feature (if properly structured)
+- Often called *“side input”* or *“shared features.”*
+  
+---
+
+![fit](img/recsys00.jpg)
+
+---
+
+![fit](img/recsys01.jpg)
+
+---
+
+![fit](img/recsys02.jpg)
+
+---
+
+![fit](img/recsys03.jpg)
+
+---
+
+![fit](img/recsys04.jpg)
+
+---
+
+![fit](img/recsys05.jpg)
+
+---
+
+![fit](img/recsys06.jpg)
+
+---
+
+![fit](img/recsys07.jpg)
+
+---
+
+![fit](img/recsys08.jpg)
+
+---
+
+![fit](img/recsys09.jpg)
+
+---
+
+![fit](img/recsys09.jpg)
 
 ---
 
@@ -159,6 +266,15 @@ San Jose, CA
     - Core Machine Learning: Encoding, Training, Validation, Selection 
     - Architectures: Embeddings, Spatial-Based, Sequence-Based
     - Deep Learning: Pre-trained (Transfer Learning) vs. Learning
+
+---
+
+---
+
+# [fit] **#2: Deep Learning Basics**
+- Basic DL Building Blocks
+- Guidance on building & training DL models
+- **Exercise**: Simple example for DL
 
 ---
 
@@ -174,9 +290,9 @@ $$ Z = 2X^2 - 3Y^2  + 1 + \epsilon $$
 # **Exercise: Simple DL Continued**
 
 Experiments with the following:
-1. Change the activation to a *"linear"* and see whether you can predict the function or not 
-2. Change the *number of layers* in the network
-3. Change the *number of learning units* in each layer
+1. Change activation to *linear* and see whether you can predict the function or not 
+2. Change *number of layers* in the network
+3. Change *number of learning units* in each layer
 
 ---
 
@@ -364,6 +480,39 @@ $$ y = RELU(dot(w,x) + bias) $$
 
 ---
 
+# [fit] **#3: Collaborative Filtering**
+
+- Core Concept
+- Exercise: Build the following 5 models
+    - Matrix Factorisation
+    - Matrix Factorisation with Bias
+    - Non-Negative Matrix Factorisation
+    - Deep Matrix Factorisation
+    - Neural Collaborative Filtering
+
+---
+
+- Data Transform
+
+
+---
+
+
+### Session #4: Collaborative Filtering *(90 mins)*
+- **Exercise - Matrix**: Go rate movies 10 movies on the paper or excel sheet.
+- **Concept – Interaction:** Linear vs. Non-Linear, Meta Features*(20 mins)*
+    - Personalisation
+    - Matrix Factorisation: SVD+, ALS & WALS, SGD
+    - Including Side Features: LightFM, Keras
+    - Loss: RMSE
+    - Evaluation: Precision@k, Recall@k
+- **Exercise – Item-based Content Model**:  *(50 mins)*
+    - Model 3: Matrix Factorisation (SVD
+    - Model 4: NNMF
+    - Model 5: Neural Matrix Factorisation
+    - Model 6: NMF + Meta Features
+
+---
 
 ### Session #3: Content Based *(60 mins)*
 - **Concept – Case Introduction**: Product Rec *(20 mins)*
@@ -383,7 +532,7 @@ $$ y = RELU(dot(w,x) + bias) $$
     - Model 2: Categorical + Dense Embedding (Pre-trained W2V)
     - Model 3: Auto Encoder
 
-
+---
 
 ### Session #4: Collaborative Filtering *(90 mins)*
 - **Exercise - Matrix**: Go rate movies 10 movies on the paper or excel sheet.
@@ -399,6 +548,8 @@ $$ y = RELU(dot(w,x) + bias) $$
     - Model 5: Neural Matrix Factorisation
     - Model 6: NMF + Meta Features
 
+---
+
 ### Session #5: Learning to Rank *(80 mins)*
 - **Exercise - Matrix**: Go rank movies 10 movies on the paper or excel sheet.
 - **Concept – Ranking:** Linear vs. Non-Linear, Meta Features*(20 mins)*
@@ -412,6 +563,7 @@ $$ y = RELU(dot(w,x) + bias) $$
     - Model 7: ??
     - Model 8: ??
 
+---
 
 ### Day One Summary & Group Exercise *(30 mins)*
 - Recap of day one concepts and lessons
