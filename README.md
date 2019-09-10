@@ -13,13 +13,29 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 
 ### Notebooks
 
-- [Movielens]
+- [Movies - Movielens](Movielens)
     - [01-Acquire](MovieLens/01-Acquire.ipynb)
-    - [02-Augment]
-    - [03-Refine]
-    - [04-Transform]
+    - [02-Augment](MovieLens/02-Augment.ipynb)
+    - [03-Refine](MovieLens/03-Refine.ipynb)
+    - [04-Transform](MovieLens/04-Evaluation.ipynb)
+    - [05-Evaluation](MovieLens/05-Evaluation.ipynb)
+    - [06-Model-Baseline](Movielens/06-Model-Baseline.ipynb)
+    - [07-Feature-extractor](Movielens/07-Feature-Extractor.ipynb)
+    - [08-Model-Matrix-Factorization](Movielens/08-Model-MF-Linear.ipynb)
+    - [09-Model-Matrix-Factorization-with-Bias](Movielens/09-MF-Linear-Bias.ipynb)
+    - [10-Model-MF-NNMF](Movielens/10-Model-MF-NNMF.ipynb)
+    - [11-Model-Deep-Matrix-Factorization](Movielens/11-Model-Deep-Factorisation.ipynb)
+    - [12-Model-Neural-Collaborative-Filtering](Movielens/11-Neural-CF.ipynb)
+    - [13-Model-Implicit-Matrix-Factorization](Movielens/13-Implicit-CF.ipynb)
+    - [14-Features-Image](Movielens/13-Image-Features.ipynb)
+    - [07-Features-NLP](Movielens/14-Doc-Embedding.ipynb)
 
-
+- [Ecommerce - YooChoose](YooChoose)
+    - [01-Data-Preparation](YooChoose/01-Data-Preparation.ipynb)     
+    - [02-Models](YooChoose/02-Models.ipynb)
+    
+- [News - Hackernews](HackerNews)
+- [Product - Groceries](Groceries)
 
 ### Python Libraries
 
