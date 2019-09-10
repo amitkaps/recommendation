@@ -27,8 +27,8 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
     - [11-Model-Deep-Matrix-Factorization](Movielens/11-Model-Deep-Factorisation.ipynb)
     - [12-Model-Neural-Collaborative-Filtering](Movielens/11-Neural-CF.ipynb)
     - [13-Model-Implicit-Matrix-Factorization](Movielens/13-Implicit-CF.ipynb)
-    - [14-Features-Image](Movielens/13-Image-Features.ipynb)
-    - [07-Features-NLP](Movielens/14-Doc-Embedding.ipynb)
+    - [14-Features-Image](Movielens/14-Image-Features.ipynb)
+    - [15-Features-NLP](Movielens/15-Doc-Embedding.ipynb)
 
 - [Ecommerce - YooChoose](YooChoose)
     - [01-Data-Preparation](YooChoose/01-Data-Preparation.ipynb)     
