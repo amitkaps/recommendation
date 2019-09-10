@@ -6,7 +6,7 @@ autoscale: true
 # [fit] **Recommendation Systems**
 # *Using Machine Learning & Deep Learning Techniques*
 
-*Day 1: 09 Sept 2019*
+*9th & 10th Sept 2019*
 
 <br>
 AI Conference 2019
@@ -271,17 +271,6 @@ Actions that a *user expects or intends* to impact their personalized experience
 ---
 
 ![fit](img/recsys09.jpg)
-
----
-
-- **Concept – Building Blocks:** Key Blocks for it *(20 mins)*   
-    - Machine Learning vs. Deep learning
-    - Computation engines: scikit-learn (linear), keras/tensorflow, pytorch (non-linear)
-    - Core Machine Learning: Encoding, Training, Validation, Selection 
-    - Architectures: Embeddings, Spatial-Based, Sequence-Based
-    - Deep Learning: Pre-trained (Transfer Learning) vs. Learning
-
----
 
 ---
 
