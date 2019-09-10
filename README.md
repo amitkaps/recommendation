@@ -11,7 +11,7 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 - **Tools**: python-data-stack: numpy, pandas, scikit-learn, keras, spacy, implicit, lightfm
 
 
-### Notebooks
+## Notebooks
 
 - [Movies - Movielens](Movielens)
     - [01-Acquire](MovieLens/01-Acquire.ipynb)
@@ -25,7 +25,7 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
     - [09-Model-Matrix-Factorization-with-Bias](Movielens/09-MF-Linear-Bias.ipynb)
     - [10-Model-MF-NNMF](Movielens/10-Model-MF-NNMF.ipynb)
     - [11-Model-Deep-Matrix-Factorization](Movielens/11-Model-Deep-Factorisation.ipynb)
-    - [12-Model-Neural-Collaborative-Filtering](Movielens/11-Neural-CF.ipynb)
+    - [12-Model-Neural-Collaborative-Filtering](Movielens/12-Neural-CF.ipynb)
     - [13-Model-Implicit-Matrix-Factorization](Movielens/13-Implicit-CF.ipynb)
     - [14-Features-Image](Movielens/14-Image-Features.ipynb)
     - [15-Features-NLP](Movielens/15-Doc-Embedding.ipynb)
@@ -37,7 +37,8 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 - [News - Hackernews](HackerNews)
 - [Product - Groceries](Groceries)
 
-### Python Libraries
+
+## Python Libraries
 
 Deep Recommender Libraries
 - [Tensorrec](https://github.com/jfkirk/tensorrec) - Built on Tensorflow
@@ -56,7 +57,7 @@ Similarity Search Libraries
 - [FAISS](https://github.com/facebookresearch/faiss) - Similarity search and clustering
 
 
-### Learning Resources
+## Learning Resources
 
 ### Reference Slides
 - [Deep Learning in RecSys](http://pro.unibz.it/projects/schoolrecsys17/DeepLearning.pdf)
