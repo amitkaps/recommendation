@@ -4,11 +4,21 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 
 - **Theory**: ML & DL Formulation, Prediction vs. Ranking, Similiarity, Biased vs. Unbiased
 - **Paradigms**: Content-based, Collaborative filtering, Knowledge-based, Hybrid and Ensembles
-- **Data: Tabular, Images, Text (Sequences)
+- **Data**: Tabular, Images, Text (Sequences)
 - **Models**: (Deep) Matrix Factorisation, Auto-Encoders, Wide & Deep, Rank-Learning, Sequence Modelling
 - **Methods**: Explicit vs. implicit feedback, User-Item matrix, Embeddings, Convolution, Recurrent, Domain Signals: location, time, context, social,
 - **Process**: Setup, Encode & Embed, Design, Train & Select, Serve & Scale, Measure, Test & Improve
 - **Tools**: python-data-stack: numpy, pandas, scikit-learn, keras, spacy, implicit, lightfm
+
+
+### Notebooks
+
+- [Movielens]
+    - [01-Acquire](MovieLens/01-Acquire.ipynb)
+    - [02-Augment]
+    - [03-Refine]
+    - [04-Transform]
+
 
 
 ### Python Libraries
@@ -30,14 +40,13 @@ Similarity Search Libraries
 - [FAISS](https://github.com/facebookresearch/faiss) - Similarity search and clustering
 
 
-## Learning Resources:
+### Learning Resources
 
 ### Reference Slides
 - [Deep Learning in RecSys](http://pro.unibz.it/projects/schoolrecsys17/DeepLearning.pdf)
 - [Lessons from Industry RecSys](http://pro.unibz.it/projects/schoolrecsys17/RecsysSummerSchool-XavierAmatriain.pdf)
 - [Architecting Recommendation Systems](https://www.slideshare.net/JamesKirk58/boston-ml-architecting-recommender-systems)
 - [Recommendation Systems Overview](http://nn4ir.com/ecir2018/slides/08_RecommenderSystems.pdf)
-- 
 
 ### Benchmarks
 - [MovieLens Benchmarks for Traditional Setup](https://github.com/microsoft/recommenders/blob/master/benchmarks/movielens.ipynb)
