@@ -86,8 +86,8 @@ San Jose, CA
 
 # **RecSys Process**
 
-- **Why**: Define (Business)
-- **What**: Frame (User-Item)
+- **Why**: Define (Business Problem)
+- **What**: Frame (User-Item-Interaction)
 - **How**: 
     - Data: Acquire, Refine, Transform
     - Visual Explore
@@ -101,21 +101,28 @@ San Jose, CA
 
 ---
 
-# **Type of Places** 
+![fit](img/aiconf-why.jpg)
+
+---
+
+
+# **Type of Companies** 
 
 - B2C Subscription Based (Netflix, Spotify)
 - B2C Ad-Based Based (News, App Stores, Youtube)
 - B2C / B2B Product/Service Marketplace (Amazon, Shopify)
 - B2B Company Website (Content Marketing)
+- ...
 
 ---
 
-# **RecSys Why** Usage
+# **RecSys Why**
 
-**Revenue**
-- **New**: Very limited User Info (Location, Popularity)
-- **Convert**: Some User info (Point)
-- **Retain**: Long term User Interaction (Longitudinal)
+
+**Revenue Objectives:** e.g. subscription-based
+- **New**: Get new sign-ups
+- **Convert**: Convert from trial to subscription
+- **Retain**: Reduce churn, Up-sell subscription
    
 ---
 
@@ -123,29 +130,32 @@ San Jose, CA
 
 ---
 
-# **RecSys Why** Usage
-
-- New: Very limited User Info (Location, Popularity)
-- Convert: Some User info (Point)
-- Retain: Long term User Interaction (Longitudinal)
-   
-   
----
-
-- **Concept - What:** What type of recommendation? *(10 mins)*
-- **Exercise – Movie:** What all recommendation are there you need to build?*(20 mins)*
+![fit](img/aiconf-what.jpg)
 
 ---
 
-- Information Retrieval, Machine Learning and Human Computer Interaction
+# **RecSys What**
 
+- **New**: Very limited user information (Location, Device, Acquisition channel)
+- **Convert**: User profile information & initial interaction with Items (Point)
+- **Retain**: User profile information & long-term User Interaction (Longitudinal)
+   
 ---
 
 # **How** Recommendations?
 
 ---
 
-# **Basic Building Blocks**
+# **Learnings from Three Disciplines**
+
+- Information Retrieval (traditional search)
+- Machine Learning (model-based)
+- Human Computer Interaction (impact of presenting items to user, and the resulting interaction)
+
+
+---
+
+# **Recsys: Basic Building Blocks**
 
 - Inputs
     - Users vs. Items
@@ -201,8 +211,8 @@ Actions that a *user expects or intends* to impact their personalized experience
 # **User & Item Features: Indicator**
   
 **Indicator Features**
-- A feature that is unique to every user/item to allow for direct personalization.
-- These features allow recommender systems to learn about every user individually without being diluted through metadata.
+- Feature unique to every user/item to allow for direct personalization.
+- Allow to learn about every user individually without being diluted through metadata.
 - Often one-hot encoded user IDs or just an identity matrix.
 
 ---
@@ -210,7 +220,11 @@ Actions that a *user expects or intends* to impact their personalized experience
 # **User & Item Features: Metadata**
 
 **Metadata Features**
-- Age, location, language, tags, labels, word counts, pre-learned embeddings, ...
+- Types of features
+    - **Continuous or Categorical**: Age, location, language, device, watch time, ...
+    - **Sequence-based**: tags, labels, word counts, audios
+    - **Image or Video Based**: posters, videos, trailers, ...
+    - **Graph-based**: knowledge base about items
 - Every element about user/item before training can be a feature (if properly structured)
 - Often called *“side input”* or *“shared features.”*
   
