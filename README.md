@@ -1,5 +1,15 @@
 # Recommendation Systems
 
+This is a workshop on using Machine Learning and Deep Learning Techniques to 
+
+
+Theory: ML & DL Formulation, Prediction vs. Ranking, Similiarity, Biased vs. Unbiased
+Paradigms: Content-based, Collaborative filtering, Knowledge-based, Hybrid and Ensembles
+Data: Tabular, Images, Text (Sequences)
+Models: (Deep) Matrix Factorisation, Auto-Encoders, Wide & Deep, Rank-Learning, Sequence Modelling
+Methods: Explicit vs. implicit feedback, User-Item matrix, Embeddings, Convolution, Recurrent, Domain Signals: location, time, context, social,
+Process: Setup, Encode & Embed, Design, Train & Select, Serve & Scale, Measure, Test & Improve
+Tools: python-data-stack: numpy, pandas, scikit-learn, tensorflow, tfranking, implicit, spacy
 
 ### Introduction
 - Why build recommendation systems? 
