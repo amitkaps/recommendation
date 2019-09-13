@@ -274,7 +274,11 @@ Actions that a *user expects or intends* to impact their personalized experience
 
 ---
 
-# [fit] **#2: Deep Learning Basics**
+
+
+---
+
+# [fit] Deep Learning Basics
 - Basic DL Building Blocks
 - Guidance on building & training DL models
 - **Exercise**: Simple example for DL
@@ -566,8 +570,4 @@ $$ y = RELU(dot(w,x) + bias) $$
     - Model 7: ??
     - Model 8: ??
 
----
-
-### Day One Summary & Group Exercise *(30 mins)*
-- Recap of day one concepts and lessons
 - Set the context for day two sessions

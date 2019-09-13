@@ -10,10 +10,15 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 - **Process**: Setup, Encode & Embed, Design, Train & Select, Serve & Scale, Measure, Test & Improve
 - **Tools**: python-data-stack: numpy, pandas, scikit-learn, keras, spacy, implicit, lightfm
 
+## Notes & Slides
+
+- [Deep Learning Basics](Notes/Deep-Learning-Basics.pdf)
+- [Workshop Notes - AI Conf 2019](Notes/AIConf-CA-2019-Notes.pdf)
+
 
 ## Notebooks
 
-- [Movies - Movielens](Movielens)
+- [Movies - Movielens](MovieLens)
     - [01-Acquire](MovieLens/01-Acquire.ipynb)
     - [02-Augment](MovieLens/02-Augment.ipynb)
     - [03-Refine](MovieLens/03-Refine.ipynb)
@@ -37,6 +42,9 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 - [News - Hackernews](HackerNews)
 - [Product - Groceries](Groceries)
 
+
+## Workshop Notes
+    
 
 ## Python Libraries
 
@@ -71,7 +79,7 @@ Similarity Search Libraries
 
 
 ### Algorithms & Approaches
-- [Collaborative Filtering for Implicit Feedback Datasets](https://arxiv.org/pdf/1205.2618)
+- [Collaborative Filtering for Implicit Feedback Datasets](http://yifanhu.net/PUB/cf.pdf)
 - [Bayesian Personalised Ranking for Implicit Data](https://arxiv.org/pdf/1205.2618)
 - [Logistic Matrix Factorisation](https://web.stanford.edu/~rezab/nips2014workshop/submits/logmat.pdf)
 - [Neural Network Matrix Factorisation](https://arxiv.org/abs/1511.06443)
