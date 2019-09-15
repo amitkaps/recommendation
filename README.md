@@ -13,7 +13,7 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 ## Notes & Slides
 
 - [Deep Learning Basics](Notes/Deep-Learning-Basics.pdf)
-- [Workshop Notes - AI Conf 2019](Notes/AIConf-CA-2019-Notes.pdf)
+- AI Conference 2019: [Board Notes - AI Conf 2019](Notes/AIConf-CA-2019-Notes.pdf) | [In Class Notebooks](https://notes.pipal.in/2019/AIConf-CA/) 
 
 
 ## Notebooks
@@ -41,9 +41,6 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
     
 - [News - Hackernews](HackerNews)
 - [Product - Groceries](Groceries)
-
-
-## Workshop Notes
     
 
 ## Python Libraries
