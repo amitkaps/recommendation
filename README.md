@@ -13,7 +13,7 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 ## Notes & Slides
 
 - [Deep Learning Basics](Notes/Deep-Learning-Basics.pdf)
-- AI Conference 2019: [Board Notes - AI Conf 2019](Notes/AIConf-CA-2019-Notes.pdf) | [In Class Notebooks](https://notes.pipal.in/2019/AIConf-CA/) 
+- AI Conference 2019: [WhiteBoard Notes](Notes/AIConf-CA-2019-Notes.pdf) | [In-Class Notebooks](https://notes.pipal.in/2019/AIConf-CA/) 
 
 
 ## Notebooks
