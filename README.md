@@ -62,7 +62,7 @@ Similarity Search Libraries
 - [FAISS](https://github.com/facebookresearch/faiss) - Similarity search and clustering
 
 Content-based Libraries
-- [Cornac](https://github.com/PreferredAI/cornac) - Leverage Auxiliary Data
+- [Cornac](https://github.com/PreferredAI/cornac) - Leverage Auxiliary Data (Images, Text, Social Networks)
 
 ## Learning Resources
 
