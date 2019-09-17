@@ -61,6 +61,8 @@ Similarity Search Libraries
 - [NMSLib](https://github.com/nmslib/nmslib) - kNN methods
 - [FAISS](https://github.com/facebookresearch/faiss) - Similarity search and clustering
 
+Content-based Libraries
+- [Cornac](https://github.com/PreferredAI/cornac) - Leverage Auxiliary Data
 
 ## Learning Resources
 
