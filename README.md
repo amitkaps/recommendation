@@ -12,8 +12,8 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
 
 ## Notes & Slides
 
-- [Deep Learning Basics](Notes/Deep-Learning-Basics.pdf)
-- [Workshop Notes - AI Conf 2019](Notes/AIConf-CA-2019-Notes.pdf)
+- Basics: [Deep Learning](Notes/Deep-Learning-Basics.pdf)
+- AI Conference 2019: [WhiteBoard Notes](Notes/AIConf-CA-2019-Notes.pdf) | [In-Class Notebooks](https://notes.pipal.in/2019/AIConf-CA/) 
 
 
 ## Notebooks
@@ -41,9 +41,6 @@ This is a workshop on using Machine Learning and Deep Learning Techniques to bui
     
 - [News - Hackernews](HackerNews)
 - [Product - Groceries](Groceries)
-
-
-## Workshop Notes
     
 
 ## Python Libraries
@@ -68,10 +65,10 @@ Similarity Search Libraries
 ## Learning Resources
 
 ### Reference Slides
-- [Deep Learning in RecSys](http://pro.unibz.it/projects/schoolrecsys17/DeepLearning.pdf)
-- [Lessons from Industry RecSys](http://pro.unibz.it/projects/schoolrecsys17/RecsysSummerSchool-XavierAmatriain.pdf)
-- [Architecting Recommendation Systems](https://www.slideshare.net/JamesKirk58/boston-ml-architecting-recommender-systems)
-- [Recommendation Systems Overview](http://nn4ir.com/ecir2018/slides/08_RecommenderSystems.pdf)
+- [Deep Learning in RecSys by Balázs Hidasi](http://pro.unibz.it/projects/schoolrecsys17/DeepLearning.pdf)
+- [Lessons from Industry RecSys by Xavier Amatriain](http://pro.unibz.it/projects/schoolrecsys17/RecsysSummerSchool-XavierAmatriain.pdf)
+- [Architecting Recommendation Systems by James Kirk](https://www.slideshare.net/JamesKirk58/boston-ml-architecting-recommender-systems)
+- [Recommendation Systems Overview by Raimon and Basilico](http://nn4ir.com/ecir2018/slides/08_RecommenderSystems.pdf)
 
 ### Benchmarks
 - [MovieLens Benchmarks for Traditional Setup](https://github.com/microsoft/recommenders/blob/master/benchmarks/movielens.ipynb)
