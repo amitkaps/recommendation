@@ -119,7 +119,7 @@ tqdm==4.35.0
 traitlets==4.3.2
 umap-learn==0.3.10
 urllib3==1.24.2
-uvicorn==0.9.0
+uvicorn==0.11.7
 uvloop==0.13.0
 wasabi==0.2.2
 wcwidth==0.1.7
