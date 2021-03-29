@@ -81,7 +81,7 @@ ptyprocess==0.6.0
 pycparser==2.19
 pydantic==0.32.2
 pydot==1.4.1
-Pygments==2.4.2
+Pygments==2.7.4
 pygobject==3.26.1
 pyOpenSSL==19.0.0
 pyparsing==2.4.2
