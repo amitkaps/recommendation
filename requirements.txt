@@ -79,7 +79,7 @@ prompt-toolkit==2.0.9
 protobuf==3.9.1
 ptyprocess==0.6.0
 pycparser==2.19
-pydantic==0.32.2
+pydantic==1.6.2
 pydot==1.4.1
 Pygments==2.4.2
 pygobject==3.26.1
