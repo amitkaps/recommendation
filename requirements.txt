@@ -21,7 +21,7 @@ defusedxml==0.6.0
 en-core-web-lg==2.1.0
 entrypoints==0.3
 enum34==1.1.6
-fastapi==0.38.1
+fastapi==0.65.2
 gast==0.3.0
 google-pasta==0.1.7
 graphviz==0.13
