@@ -105,7 +105,7 @@ srsly==0.1.0
 starlette==0.12.8
 statsmodels==0.10.1
 tensorboard==1.14.0
-tensorflow==1.14.0
+tensorflow==2.5.3
 tensorflow-estimator==1.14.0
 tensorrec==0.26.2
 termcolor==1.1.0
